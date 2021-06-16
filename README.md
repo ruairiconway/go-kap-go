@@ -1,4 +1,4 @@
-# GraphQL Pokedex
+# GO KAP GO
 
 ## Brief
 Non profit effort by Michael Kaplan to raise funds for Breast Cancer research and awareness. Running 465 miles in September (breast cancer awareness month), running the miles of the day for a month (i.e. run 10 miles on the 10th).
