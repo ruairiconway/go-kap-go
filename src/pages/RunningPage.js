@@ -1,7 +1,13 @@
 import React from 'react'
+import Header from '../components/Header'
 
 export default function RunningPage() {
     return (
-        <p>running</p>
+        <>
+            <Header />
+            <main>
+                <p>Running page</p>
+            </main>
+        </>
     )
 }
