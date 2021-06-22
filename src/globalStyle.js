@@ -13,6 +13,9 @@ const GlobalStyle = createGlobalStyle`
         // TYPE
         --header: 'Anton', sans-serif;
         --body: 'Zilla Slab', serif;
+
+        // SHADOW
+        --base-shadow: -7.5px 7.5px 0px #E5E5E5;
     }
 
     * {
