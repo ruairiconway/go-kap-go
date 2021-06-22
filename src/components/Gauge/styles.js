@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     background: var(--dark);
 `
 
-export const Funds = styled.div`
+export const FundBar = styled.div`
     position: absolute;
     left: 0;
     bottom: 0;

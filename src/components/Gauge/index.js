@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper, Funds, NumDiv, Num, Barlines, Line } from './styles'
+import { Wrapper, FundBar, NumDiv, Num, Barlines, Line } from './styles'
 
 export default function Gauge() {
     return (
@@ -7,7 +7,7 @@ export default function Gauge() {
             <NumDiv>
                 <Num>$20,000</Num>
             </NumDiv>
-            <Funds />
+            <FundBar />
             <Barlines>
                 {Array(9).fill(<Line />)}
             </Barlines>
