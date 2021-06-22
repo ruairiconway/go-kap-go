@@ -62,7 +62,6 @@ export const NavItem = styled.li`
     height: 35px;
 
     a {
-        display: block;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,7 +70,7 @@ export const NavItem = styled.li`
         font-family: var(--body);
         font-weight: 600;
         font-size: 1.8em;
-        text-algn: center;
+        text-align: center;
         text-transform: uppercase;
         letter-spacing: 1.5px;
         text-decoration: none;
