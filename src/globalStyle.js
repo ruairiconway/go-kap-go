@@ -15,15 +15,26 @@ const GlobalStyle = createGlobalStyle`
         --body: 'Zilla Slab', serif;
     }
 
+    * {
+        box-sizing: border-box;
+    }
+
     html {
         margin: 0;
         font-size: 10px;
     }
 
+    h1, h2, h3, h4, p {
+        margin 0;
+    }
+
     body {
         margin: 0;
-        box-sizing: border-box;
         min-height: 100vh;
+    }
+
+    main {
+        margin: calc(35px + 2em) calc(35px + 2em) 1em 1em;
     }
 
 `

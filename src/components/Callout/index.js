@@ -1,13 +1,18 @@
 import React from 'react'
 import {
-    Para
+    Wrapper,
+    Title,
+    Pink
 } from './styles'
 
-export default function Callout({ topLine, bottomLine, ...prevProps }) {
-    return (
-        <div>
-            <Para>I'm the {topLine}</Para>
-            <p>I'm the {bottomLine}</p>
-        </div>
-    )
-} 
+export default function Callout({ children, ...prevProps }) {
+    return <Wrapper {...prevProps}>{children}</Wrapper>
+}
+
+Callout.Title = function CalloutTitle({ children, ...prevProps }) {
+    return <Title {...prevProps}>{children}</Title>
+}
+
+Callout.Pink = function CalloutPink({ children, ...prevProps }) {
+    return <Pink {...prevProps}>{children}</Pink>
+}
