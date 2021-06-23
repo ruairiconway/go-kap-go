@@ -10,7 +10,7 @@ import bxlInstagramAlt from '@iconify/icons-bx/bxl-instagram-alt'
 
 export default function SocialBar({ stacked, ...prevProps }) {
     return (
-        <Wrapper stacked={stacked} >
+        <Wrapper {...prevProps} stacked={stacked} >
             <Link href="https://www.instagram.com/" target="_blank" order="1">
                 <Icon icon={bxlInstagramAlt} style={{fontSize: '24px'}} />
             </Link>
