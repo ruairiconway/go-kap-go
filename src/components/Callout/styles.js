@@ -5,8 +5,7 @@ export const Wrapper = styled.div`
     grid-auto-flow: column;
     grid-gap: 5rem;
     background: ${({ dark }) => dark ? "var(--dark)" : "var(--light)"};
-    width: min-content;
-    padding: 2.5rem;
+    padding: 3rem;
     box-shadow: var(--base-shadow);
 
     ${({ dark }) => dark ? `
@@ -30,7 +29,7 @@ export const Figure = styled.div`
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
+    align-items: ${({ center }) => center ? "center" : "flex-end"};
 `
 
 export const Header = styled.p`
@@ -47,6 +46,7 @@ export const Caption = styled.p`
     font-weight: 600;
     font-size: 1.8rem;
     text-transform: uppercase;
+    padding: 0 0.25em 0 0;
 `
 
 export const Pink = styled.span`

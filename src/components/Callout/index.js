@@ -20,7 +20,7 @@ Callout.Figure = function CalloutFigure({ children, ...prevProps}) {
     return <Figure {...prevProps}>{children}</Figure>
 }
 
-Callout.Header = function CalloutFigure({ children, ...prevProps}) {
+Callout.Header = function CalloutHeader({ children, ...prevProps}) {
     return <Header {...prevProps}>{children}</Header>
 }
 
