@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const Section = styled.section`
     display: grid;
     max-width: 100%;
-    min-height: calc(100vh - 35px - 3.5em);
+    max-height: calc(100vh - 35px - 3.5em);
     grid-template: 1fr / 1fr 2fr;
     grid-auto-flow: column;
-    grid-column-gap: 3rem;
+    grid-column-gap: 6rem;
     padding-top: 3rem;
 `
 
@@ -41,11 +41,15 @@ export const SubSection = styled.div`
             "text-2 text-2 text-2"
             "callout-1 gfm gfm"
             "text-3 gfm gfm";
-        grid-row-gap: 3rem;
-        grid-column-gap: 3rem;
+        grid-row-gap: 6rem;
+        grid-column-gap: 6rem;
 
         .text-1 {
             grid-area: text-1;
+
+            > h3 {
+                margin: 0;
+            }
         } 
 
         .social {
