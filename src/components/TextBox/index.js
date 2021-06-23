@@ -3,6 +3,7 @@ import {
     Wrapper,
     Header,
     SubHeader,
+    ParaHeader,
     Para,
     Link,
     Pink
@@ -18,6 +19,10 @@ TextBox.Header = function TextBoxHeader({ children, ...prevProps }) {
 
 TextBox.SubHeader = function TextBoxSubHeader({ children, ...prevProps }) {
     return <SubHeader {...prevProps}>{children}</SubHeader>
+}
+
+TextBox.ParaHeader = function TextBoxParaHeader({ children, ...prevProps}) {
+    return <ParaHeader {...prevProps}>{children}</ParaHeader>
 }
 
 TextBox.Para = function TextBoxPara({ children, ...prevProps }) {
