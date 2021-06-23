@@ -29,11 +29,11 @@ export default function LandingContainer({ children, ...prevProps }) {
                 </TextBox>
                 <Callout className={"callout-1"} dark >
                     <Callout.Figure>
-                        <Callout.Header><Callout.Pink>31</Callout.Pink></Callout.Header>
+                        <Callout.Header><Callout.Pink>30</Callout.Pink></Callout.Header>
                         <Callout.Caption>days</Callout.Caption>
                     </Callout.Figure>
                     <Callout.Figure>
-                        <Callout.Header>496</Callout.Header>
+                        <Callout.Header>465</Callout.Header>
                         <Callout.Caption>miles</Callout.Caption>
                     </Callout.Figure>
                 </Callout>
