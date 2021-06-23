@@ -16,6 +16,12 @@ const GlobalStyle = createGlobalStyle`
 
         // SHADOW
         --base-shadow: -7.5px 7.5px 0px #E5E5E5;
+        --hover-shadow: -4.5px 4.5px 0px #B4B4B4;
+        --active-shadow: 0px 0px 0px #E5E5E5;
+
+        // TRANSLATE
+        --hover-translate: translate(-3px, 3px);
+        --active-translate: translate(-7.5px, 7.5px);
     }
 
     * {
@@ -41,10 +47,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     main {
-        margin: calc(35px + 2rem) calc(35px + 4rem) 0 3rem;
+        margin: 0 calc(35px + 4rem) 0 3rem;
+        padding: calc(35px + 2rem) 0 0 0;
 
         > * {
-            margin: 0 0 9rem 0;
+            margin: 0 0 15rem 0;
         }
 
         > :last-child {
