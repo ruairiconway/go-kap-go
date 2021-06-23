@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 2.5rem;
+    grid-gap: 3rem;
     width: max-content;
-    padding: 2.5rem;
+    // padding: 3rem;
 
     ${({ stacked }) => stacked ? `
         grid-template-areas: 

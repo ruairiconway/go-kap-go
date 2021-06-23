@@ -3,10 +3,11 @@ import styled from 'styled-components'
 export const Section = styled.section`
     display: grid;
     max-width: 100%;
-    max-height: calc(100vh - 35px - 3.5em);
+    min-height: calc(100vh - 35px - 3.5em);
     grid-template: 1fr / 1fr 2fr;
     grid-auto-flow: column;
-    grid-column-gap: 2.5rem;
+    grid-column-gap: 3rem;
+    padding-top: 3rem;
 `
 
 export const SubSection = styled.div`
@@ -28,7 +29,6 @@ export const SubSection = styled.div`
             grid-column: 1 / span 3;
             justify-self: stretch;
             align-self: stretch;
-            z-index: 0;
         }
     `}
     ${({ className }) => className === "sub-2" && `
@@ -41,11 +41,11 @@ export const SubSection = styled.div`
             "text-2 text-2 text-2"
             "callout-1 gfm gfm"
             "text-3 gfm gfm";
-        grid-column-gap: 2.5rem;
+        grid-row-gap: 3rem;
+        grid-column-gap: 3rem;
 
         .text-1 {
             grid-area: text-1;
-            margin-bottom: 0;
         } 
 
         .social {

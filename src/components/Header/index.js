@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { HOME, RUNNING, REASON } from '../../constants/routes'
 import { Wrapper, Logo, Nav, NavItem } from './styles.js'
-import { ReactComponent as Ribbon } from '../../assets/svg/ribbon-small.svg'
+import { ReactComponent as Ribbon } from '../../assets/ribbon/ribbon-small.svg'
 
 export default function Header() {
     return(

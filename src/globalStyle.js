@@ -36,8 +36,20 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
     }
 
+    img {
+        object-fit: cover;
+    }
+
     main {
-        margin: calc(35px + 2em) calc(35px + 2em) 1em 1em;
+        margin: calc(35px + 2rem) calc(35px + 4rem) 0 3rem;
+
+        > * {
+            margin: 0 0 9rem 0;
+        }
+
+        > :last-child {
+            margin: 0;
+        }
     }
 
 `

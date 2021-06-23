@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
     max-width: max-content;
-    margin: 2.5rem;
+    margin: 0 3rem;
 `
 
 export const Header = styled.h2`
@@ -25,7 +25,6 @@ export const SubHeader = styled.h3`
 `
 
 export const Para = styled.p`
-    margin: 2.5rem 0;
     font-family: var(--body);
     font-weight: 400;
     font-size: 1.4rem;
