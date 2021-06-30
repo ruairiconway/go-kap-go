@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Section = styled.section`
     display: grid;
-    grid-template: auto 2fr auto / 50% 1fr auto;
+    grid-template: auto 2fr auto / 55% 1fr auto;
     grid-template-areas:
         "text-box map ."
         "stats map ."
@@ -17,19 +17,13 @@ export const Section = styled.section`
     .stats {
         grid-area: stats;
         justify-self: stretch;
-        align-self: stretch;
+        align-self: start;
     }
 
     .link {
         grid-area: link;
         justify-self: end;
         align-self: start;
-    }
-
-    .map {
-        grid-area: map;
-        justify-self: stretch;
-        align-self: stretch;
     }
 
     .callout1 {
