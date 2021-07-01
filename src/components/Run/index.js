@@ -3,7 +3,9 @@ import {
     convertDistance,
     convertTime,
     convertPace,
-    convertElevation
+    convertElevation,
+    convertEndTime,
+    convertRunDate
 } from '../../tools/convert'
 import {
     Wrapper,
@@ -22,9 +24,12 @@ export default function Run({ stats, latest, children, ...prevProps }) {
             moving_time,
             average_speed,
             total_elevation_gain,
-            start_date_local
+            start_date_local,
+            elapsed_time
         } = stats
 
+        const completeTime = convertEndTime(start_date_local, elapsed_time)
+        const completeDate = convertRunDate(start_date_local)
         const statsInfo = [ 
             {stat: convertDistance(distance), metric: "distance", unit: "mi"},
             {stat: convertTime(moving_time), metric: "time", unit: null},
@@ -44,12 +49,11 @@ export default function Run({ stats, latest, children, ...prevProps }) {
             )
         })
 
-        console.log(statsInfo)
         return (
             <Wrapper>
                 {latest && <Title>Latest run</Title>}
                 <Title align="right">{name}</Title>
-                <Para align="right">Run completed {start_date_local}</Para>
+                <Para align="right">Run completed {completeTime}, {completeDate}</Para>
                 <Data>
                     {statsList}
                 </Data>
