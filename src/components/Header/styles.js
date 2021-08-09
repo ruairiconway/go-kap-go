@@ -9,6 +9,7 @@ export const Wrapper = styled.header`
     height: 35px;
     width: calc(100% - 2em);
     background: var(--dark);
+    z-index: 1;
 
     a {
         color: var(--light);

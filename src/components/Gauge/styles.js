@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
     bottom: 1em;
     height: calc(100vh - 35px - 3em);
     background: var(--dark);
+    z-index: 1;
 `
 
 export const FundBar = styled.div`
@@ -14,7 +15,7 @@ export const FundBar = styled.div`
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 20%;
+    height: ${({ raised }) => raised || "0"}%;
     border: solid var(--light);
     border-width: 2px 0 0 0;
     background: var(--pink);
@@ -31,7 +32,6 @@ export const NumDiv = styled.div`
     height: 35px;
     transform-origin: right;
     transform: rotate(-90deg) translate(1em,-50%);
-    background: var(--dark);
     z-index: 1;
 `
 
@@ -48,10 +48,10 @@ export const Num = styled.p`
 
 export const Barlines = styled.div`
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 35px;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -62,4 +62,6 @@ export const Line = styled.div`
     width: 33%;
     height: 2px;
     background: var(--light);
+
+
 `
