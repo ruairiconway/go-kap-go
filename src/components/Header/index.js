@@ -15,12 +15,12 @@ export default function Header() {
             </Logo>
             <Nav>
                 <ul>
-                    <NavItem>
+                    {/* <NavItem>
                         <Link to={RUNNING}>The Running</Link>
                     </NavItem>
                     <NavItem>
                         <Link to={REASON}>The Reason</Link>
-                    </NavItem>
+                    </NavItem> */}
                     <NavItem pinkBtn >
                         <a href="https://www.gofundme.com" target="_blank" rel="noreferrer">Donate</a>
                     </NavItem>

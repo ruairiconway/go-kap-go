@@ -77,7 +77,7 @@ export const SubSection = styled.div`
         .gofundme {
             grid-area: gfm;
             justify-self: stretch;
-            align-self: stretch;
+            align-self: center;
         }
     `}
 `

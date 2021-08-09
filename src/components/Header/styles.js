@@ -17,7 +17,7 @@ export const Wrapper = styled.header`
 `
 
 export const Logo = styled.div`
-    margin: 0 0 0 8.5em;
+    margin: 0 0 0 2em;
     height: 35px;
 
     a {
@@ -45,7 +45,7 @@ export const Logo = styled.div`
 `
 
 export const Nav = styled.nav`
-    margin: 0 8.5em 0 0;
+    margin: 0 6.5rem 0 0;
 
     ul {
         display: flex;

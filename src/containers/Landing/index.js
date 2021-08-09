@@ -1,5 +1,6 @@
 import React from 'react'
 import Callout from '../../components/Callout'
+import GoFundMePlug from '../../components/GoFundMePlug'
 import Image from '../../components/Image'
 import SocialBar from '../../components/SocialBar'
 import TextBox from '../../components/TextBox'
@@ -41,7 +42,7 @@ export default function LandingContainer({ children, ...prevProps }) {
                     <TextBox.SubHeader align="right" stacked><TextBox.Pink>support</TextBox.Pink></TextBox.SubHeader>
                     <TextBox.SubHeader align="right" stacked>{'>>>'}</TextBox.SubHeader>
                 </TextBox>
-                <Image className={"gofundme"} src="https://via.placeholder.com/100" />
+                <GoFundMePlug/>
             </SubSection>
         </Section>
     )

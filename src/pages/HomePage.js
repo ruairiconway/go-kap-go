@@ -15,8 +15,8 @@ export default function HomePage() {
             <main>
                 <LandingContainer />
                 <InstaFeed />
-                <RunningLeadIn />
-                <ReasonLeadIn />
+                {/* <RunningLeadIn /> */}
+                {/* <ReasonLeadIn /> */}
             </main>
             <Footer />
         </>
