@@ -6,6 +6,7 @@ import InstaFeed from '../components/InstaFeed'
 import RunningLeadIn from '../containers/RunningLeadIn'
 import ReasonLeadIn from '../containers/ReasonLeadIn'
 import Footer from '../components/Footer'
+import TextBox from '../components/TextBox'
 
 export default function HomePage() {
     return (
@@ -15,6 +16,9 @@ export default function HomePage() {
             <main>
                 <LandingContainer />
                 <InstaFeed />
+                <TextBox style={{maxWidth: '100%'}}>
+                    <TextBox.SubHeader style={{textAlign: 'center'}}><TextBox.Pink>More</TextBox.Pink> to come!</TextBox.SubHeader>
+                </TextBox>
                 {/* <RunningLeadIn /> */}
                 {/* <ReasonLeadIn /> */}
             </main>

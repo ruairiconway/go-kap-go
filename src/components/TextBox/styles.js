@@ -4,6 +4,10 @@ export const Wrapper = styled.div`
     max-width: max-content;
     margin: 0 3rem;
 
+    > :first-child {
+        margin-top: 0;
+    }
+
     p:first-of-type {
         margin: 0 0 2rem 0;
     }

@@ -14,18 +14,19 @@ export default function LandingContainer({ children, ...prevProps }) {
         <Section>
             <SubSection className={"sub-1"}>
                 <Callout className={"callout-title"} dark >
-                    <Callout.Title >Go Kap <Callout.Pink>Go</Callout.Pink></Callout.Title>
+                    <Callout.Title >Go Kap<br/><Callout.Pink>Go</Callout.Pink></Callout.Title>
                 </Callout>
-                <Image className={"img-title"} src="https://via.placeholder.com/100" />
+                <Image className={"img-title"} src={`${process.env.PUBLIC_URL}/assets/landing.jpg`} left />
             </SubSection>
             <SubSection className={"sub-2"}>
                 <TextBox className={"text-1"} >
                     <TextBox.Header><TextBox.Pink>Run</TextBox.Pink>raiser</TextBox.Header>
-                    <TextBox.SubHeader>For breast cancer awareness</TextBox.SubHeader>
+                    <TextBox.SubHeader>For breast cancer research</TextBox.SubHeader>
                 </TextBox>
                 <SocialBar className={"social"} stacked />
                 <TextBox className={"text-2"} >
-                    <TextBox.Para>Vulputate sapien, <TextBox.Pink>erat lacus</TextBox.Pink> consequat magna massa mi. Imperdiet lacus iaculis sit consectetur. Massa nunc nullam auctor amet <TextBox.Pink>blandit tellus</TextBox.Pink> adipiscing accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</TextBox.Para>
+                    <TextBox.Para>Hi my name is <TextBox.Pink>Michael</TextBox.Pink>. This September 2021, I will be attempting to run the <TextBox.Pink>days of the month</TextBox.Pink> - running 1 mile on the 1st, 2 on the 2nd, 3 on the 3rd, all the way up to 30 on the 30th, totalling 465 miles. </TextBox.Para>
+                    <TextBox.Para>Follow my progress here and share your support as I set out on this physical challenge in hopes of raising <TextBox.Pink>awareness/funds</TextBox.Pink> for breast cancer research. </TextBox.Para>
                 </TextBox>
                 <Callout className={"callout-1"} dark >
                     <Callout.Figure center >

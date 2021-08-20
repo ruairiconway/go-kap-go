@@ -8,10 +8,10 @@ export default function Header() {
     return(
         <Wrapper>
             <Logo>
-                {/* <Link to={HOME}>
+                <Link to={HOME}>
                     <p><span>Go</span> Kap Go</p>
                     <Ribbon />
-                </Link> */}
+                </Link>
             </Logo>
             <Nav>
                 <ul>

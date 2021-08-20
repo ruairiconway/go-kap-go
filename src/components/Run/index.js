@@ -34,7 +34,7 @@ export default function Run({ stats, latest, children, ...prevProps }) {
             {stat: convertDistance(distance), metric: "distance", unit: "mi"},
             {stat: convertTime(moving_time), metric: "time", unit: null},
             {stat: convertPace(average_speed), metric: "pace", unit: "min / mi"},
-            {stat: convertElevation(total_elevation_gain), metric: "elevation", unit: "ft"}
+            {stat: convertElevation(total_elevation_gain), metric: "climb", unit: "ft"}
         ]
 
         const statsList = statsInfo.map(info => {

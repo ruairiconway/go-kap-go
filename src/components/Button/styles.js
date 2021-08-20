@@ -13,7 +13,7 @@ export const Wrapper = styled.button`
     color: var(--light);
     box-shadow: var(--base-shadow);
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.1s ease-out;
 
     &:hover,
     &:focus {

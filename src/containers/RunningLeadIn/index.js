@@ -26,9 +26,9 @@ export default function RunningLeadIn() {
                     <TextBox.Para>Vulputate sapien, <TextBox.Pink>erat lacus</TextBox.Pink> consequat magna massa mi. Imperdiet lacus iaculis sit consectetur. Massa nunc nullam auctor amet <TextBox.Pink>blandit tellus</TextBox.Pink> adipiscing accumsan.</TextBox.Para>
                 </TextBox>
                 <Run className={"stats"} stats={strava.latestRun} latest />
-                <Link to={RUNNING} className={"link"}>
+                {/* <Link to={RUNNING} className={"link"}>
                     <Button>See stats</Button>
-                </Link>
+                </Link> */}
                 <Map latest />
                 <Callout className={"callout1"} dark >
                     <Callout.Figure>

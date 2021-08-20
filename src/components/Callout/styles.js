@@ -6,8 +6,7 @@ export const Wrapper = styled.div`
     grid-gap: 5rem;
     background: ${({ dark }) => dark ? "var(--dark)" : "var(--light)"};
     padding: 3rem;
-    box-shadow: var(--base-shadow);
-
+    ${({ dark }) => dark && `box-shadow: var(--base-shadow);`}
     ${({ dark }) => dark ? `
         color: var(--light);
     ` : `

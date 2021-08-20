@@ -17,7 +17,7 @@ export const Wrapper = styled.header`
 `
 
 export const Logo = styled.div`
-    margin: 0 0 0 2em;
+    margin: 0 0 0 6.5em;
     height: 35px;
 
     a {

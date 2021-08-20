@@ -23,9 +23,9 @@ export default function ReasonLeadIn() {
             </TextBox>
             <Image src="https://via.placeholder.com/515" className={"image1"} />
             <Image src="https://via.placeholder.com/100" className={"image2"} />
-            <Link to={REASON} className={"link"}>
+            {/* <Link to={REASON} className={"link"}>
                 <Button>Learn more</Button>
-            </Link>
+            </Link> */}
         </Section>
     )
 }

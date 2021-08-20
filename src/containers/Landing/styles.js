@@ -3,11 +3,15 @@ import styled from 'styled-components'
 export const Section = styled.section`
     display: grid;
     max-width: 100%;
-    max-height: calc(100vh - 35px - 3.5em);
+    height: calc(100vh - 35px - 3.5em);
     grid-template: 1fr / 1fr 2fr;
     grid-auto-flow: column;
-    grid-column-gap: 6rem;
+    grid-column-gap: 3rem;
     padding-top: 3rem;
+
+    @media (max-width: 1080px) {
+        background:red;
+    }
 `
 
 export const SubSection = styled.div`
@@ -15,17 +19,18 @@ export const SubSection = styled.div`
         max-height: 100%;
         max-width: 100%;
         display: grid;
-        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        grid-template: 1fr 1fr 1fr / 1fr min-content 2fr;
 
         .callout-title {
-            grid-row: 1 / span 2;
+            grid-row: 2 / span 2;
             grid-column: 2 / span 1;
-            align-self: start;
+            align-self: end;
             z-index: 1;
         }
 
         .img-title {
-            grid-row: 2 / span 2;
+            filter: grayscale(100%);
+            grid-row: 1 / span 2;
             grid-column: 1 / span 3;
             justify-self: stretch;
             align-self: stretch;
@@ -41,8 +46,8 @@ export const SubSection = styled.div`
             "text-2 text-2 text-2"
             "callout-1 gfm gfm"
             "text-3 gfm gfm";
-        grid-row-gap: 6rem;
-        grid-column-gap: 6rem;
+        grid-row-gap: 3rem;
+        grid-column-gap: 3rem;
 
         .text-1 {
             grid-area: text-1;
