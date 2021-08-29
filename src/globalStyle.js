@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1, h2, h3, h4, p {
-        margin 0;
+        margin: 0;
     }
 
     body {
@@ -49,6 +49,10 @@ const GlobalStyle = createGlobalStyle`
     main {
         margin: 0 calc(35px + 4rem) 0 3rem;
         padding: calc(35px + 2rem) 0 0 0;
+        
+        @media (max-width: 1080px) {
+            margin: 1rem;
+        }
 
         > * {
             margin: 0 0 15rem 0;

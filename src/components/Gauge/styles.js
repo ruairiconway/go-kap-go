@@ -8,6 +8,10 @@ export const Wrapper = styled.div`
     height: calc(100vh - 35px - 3em);
     background: var(--dark);
     z-index: 1;
+
+    @media (max-width: 1080px) {
+        display: none;
+    }
 `
 
 export const FundBar = styled.div`

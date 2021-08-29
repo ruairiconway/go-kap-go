@@ -22,4 +22,8 @@ export const Link = styled.a`
 export const Feed = styled.div`
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+
+    @media (max-width: 1080px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 `

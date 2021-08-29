@@ -15,6 +15,11 @@ export const Wrapper = styled.div`
         grid-template-areas: 
             "a b c";
     `}
+
+    @media (max-width: 1080px) {
+        grid-template-areas: 
+            "a b c";
+    }
 `
 
 export const Link = styled.a`

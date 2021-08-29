@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+
+    @media (max-width: 1080px) {
+        margin: 9rem 1rem 9rem 1rem;
+    }
 `
 
 export const SignOff = styled.p`

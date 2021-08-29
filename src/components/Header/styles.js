@@ -18,6 +18,9 @@ export const Wrapper = styled.header`
 
 export const Logo = styled.div`
     margin: 0 0 0 6.5em;
+    @media (max-width: 1080px) {
+        margin: 0 0 0 1em;
+    }
     height: 35px;
 
     a {
@@ -52,6 +55,10 @@ export const Nav = styled.nav`
         flex-flow: row nowrap;
         padding: 0;
         margin: 0;
+    }
+
+    @media (max-width: 1080px) {
+        display: none;
     }
 `
 
